@@ -1,0 +1,9 @@
+---
+- name: Ansible start service
+  hosts: all
+  gather_facts: true
+  tasks:
+    - name: Start a service with systemd
+      systemd:
+        name: nginx
+        state: started
