@@ -5,5 +5,5 @@
   tasks:
     - name: Start a service with systemd
       systemd:
-        name: nginx.service
+        name: nginx
         state: started
